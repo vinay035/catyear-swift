@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Cat_Years" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,75 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ht2-ex-4u9">
+                                <rect key="frame" x="263" y="28" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wN5-EH-njg">
+                                <rect key="frame" x="221" y="86" width="158" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J42-HQ-0nr">
+                                <rect key="frame" x="252" y="147" width="97" height="30"/>
+                                <state key="normal" title="Find cat years">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findCatYears:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="unU-Qq-3V5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6s-QI-KSh">
+                                <rect key="frame" x="221" y="57" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmJ-ju-O3v">
+                                <rect key="frame" x="194" y="206" width="213" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="1iB-Ip-gmP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="kxf-Uk-Msn">
+                                <rect key="frame" x="172" y="336" width="256" height="256"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n6s-QI-KSh" firstAttribute="width" secondItem="Ht2-ex-4u9" secondAttribute="height" multiplier="158:21" id="0jV-dZ-PT8"/>
+                            <constraint firstAttribute="centerX" secondItem="Ht2-ex-4u9" secondAttribute="centerX" id="AVr-ao-asX"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kxf-Uk-Msn" secondAttribute="bottom" constant="8" symbolic="YES" id="Bui-Gw-uIu"/>
+                            <constraint firstItem="n6s-QI-KSh" firstAttribute="top" secondItem="Ht2-ex-4u9" secondAttribute="bottom" constant="8" symbolic="YES" id="Qui-LI-gtp"/>
+                            <constraint firstAttribute="centerX" secondItem="n6s-QI-KSh" secondAttribute="centerX" id="RDo-pX-Xgw"/>
+                            <constraint firstAttribute="centerX" secondItem="J42-HQ-0nr" secondAttribute="centerX" constant="-0.5" id="TEF-zT-IBe"/>
+                            <constraint firstItem="wN5-EH-njg" firstAttribute="top" secondItem="n6s-QI-KSh" secondAttribute="bottom" constant="8" symbolic="YES" id="V6O-xo-dSq"/>
+                            <constraint firstItem="AmJ-ju-O3v" firstAttribute="top" secondItem="J42-HQ-0nr" secondAttribute="bottom" constant="29" id="awL-2p-RHS"/>
+                            <constraint firstItem="AmJ-ju-O3v" firstAttribute="centerX" secondItem="kxf-Uk-Msn" secondAttribute="centerX" id="hmS-mJ-1yc"/>
+                            <constraint firstItem="J42-HQ-0nr" firstAttribute="centerX" secondItem="AmJ-ju-O3v" secondAttribute="centerX" id="mwn-lj-HOM"/>
+                            <constraint firstItem="J42-HQ-0nr" firstAttribute="top" secondItem="wN5-EH-njg" secondAttribute="bottom" constant="31" id="oqp-XA-hXo"/>
+                            <constraint firstItem="Ht2-ex-4u9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="rps-vk-sRh"/>
+                            <constraint firstItem="wN5-EH-njg" firstAttribute="width" secondItem="n6s-QI-KSh" secondAttribute="width" id="wNI-vM-6DL"/>
+                            <constraint firstItem="wN5-EH-njg" firstAttribute="leading" secondItem="n6s-QI-KSh" secondAttribute="leading" id="xV3-XR-hYG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="catAge" destination="wN5-EH-njg" id="QO5-Yd-GiC"/>
+                        <outlet property="message" destination="AmJ-ju-O3v" id="OKx-ct-aVc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="377" y="300"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat.png" width="256" height="256"/>
+    </resources>
 </document>

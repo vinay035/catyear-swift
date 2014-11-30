@@ -13,6 +13,7 @@
 		7606BF8F1A2B180200824D3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7606BF8E1A2B180200824D3D /* Images.xcassets */; };
 		7606BF921A2B180200824D3D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7606BF901A2B180200824D3D /* LaunchScreen.xib */; };
 		7606BF9E1A2B180200824D3D /* Cat_YearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606BF9D1A2B180200824D3D /* Cat_YearsTests.swift */; };
+		7606BFA81A2B19AD00824D3D /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7606BFA71A2B19AD00824D3D /* cat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		7606BF971A2B180200824D3D /* Cat YearsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat YearsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7606BF9C1A2B180200824D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7606BF9D1A2B180200824D3D /* Cat_YearsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_YearsTests.swift; sourceTree = "<group>"; };
+		7606BFA71A2B19AD00824D3D /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		76DCA7D61A2B57BB0030266A /* Cat Years-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cat Years-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 				7606BF841A2B180200824D3D /* Cat Years */,
 				7606BF9A1A2B180200824D3D /* Cat YearsTests */,
 				7606BF831A2B180200824D3D /* Products */,
+				76DCA7D61A2B57BB0030266A /* Cat Years-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +84,7 @@
 				7606BF871A2B180200824D3D /* AppDelegate.swift */,
 				7606BF891A2B180200824D3D /* ViewController.swift */,
 				7606BF8B1A2B180200824D3D /* Main.storyboard */,
+				7606BFA71A2B19AD00824D3D /* cat.png */,
 				7606BF8E1A2B180200824D3D /* Images.xcassets */,
 				7606BF901A2B180200824D3D /* LaunchScreen.xib */,
 				7606BF851A2B180200824D3D /* Supporting Files */,
@@ -194,6 +199,7 @@
 			files = (
 				7606BF8D1A2B180200824D3D /* Main.storyboard in Resources */,
 				7606BF921A2B180200824D3D /* LaunchScreen.xib in Resources */,
+				7606BFA81A2B19AD00824D3D /* cat.png in Resources */,
 				7606BF8F1A2B180200824D3D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,9 +342,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/vinayagarwal/Downloads/parse-library-1.5.0",
+				);
 				INFOPLIST_FILE = "Cat Years/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cat Years-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +360,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/vinayagarwal/Downloads/parse-library-1.5.0",
+				);
 				INFOPLIST_FILE = "Cat Years/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cat Years-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +426,7 @@
 				7606BFA31A2B180200824D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7606BFA41A2B180200824D3D /* Build configuration list for PBXNativeTarget "Cat YearsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +435,7 @@
 				7606BFA61A2B180200824D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

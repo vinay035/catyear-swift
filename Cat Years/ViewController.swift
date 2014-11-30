@@ -9,7 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var message: UILabel!
+    
+    @IBOutlet var catAge: UITextField!
+    
+    @IBAction func findCatYears(sender: AnyObject) {
+        
+        var age=catAge.text.toInt();
+        if((age) != nil)
+        {
+            age=age!*7;
+            
+            message.text="Your cat is \(age!) years old!";
+        }
+        else
+        {
+            message.text="Please enter a number";
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
