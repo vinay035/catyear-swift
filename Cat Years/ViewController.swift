@@ -17,16 +17,23 @@ class ViewController: UIViewController {
     @IBAction func findCatYears(sender: AnyObject) {
         
         var age=catAge.text.toInt();
+        var input:Int
         if((age) != nil)
         {
             age=age!*7;
-            
             message.text="Your cat is \(age!) years old!";
+            input=age!;
         }
         else
         {
             message.text="Please enter a number";
+            input=0;
+            
         }
+        var testObject = PFObject(className:"catyear")
+        testObject["input"] = input;
+        testObject["output"] = message.text
+        testObject.saveInBackground()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
