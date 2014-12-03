@@ -14,6 +14,8 @@
 		7606BF921A2B180200824D3D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7606BF901A2B180200824D3D /* LaunchScreen.xib */; };
 		7606BF9E1A2B180200824D3D /* Cat_YearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606BF9D1A2B180200824D3D /* Cat_YearsTests.swift */; };
 		7606BFA81A2B19AD00824D3D /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7606BFA71A2B19AD00824D3D /* cat.png */; };
+		762BE0FA1A2FB089009BE835 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762BE0F91A2FB089009BE835 /* Bolts.framework */; };
+		762BE0FC1A2FB8E9009BE835 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 762BE0FB1A2FB8E9009BE835 /* libGoogleAnalyticsServices.a */; };
 		76C32A5A1A2BB45A00972D91 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C32A591A2BB45A00972D91 /* AudioToolbox.framework */; };
 		76C32A5C1A2BB46200972D91 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C32A5B1A2BB46200972D91 /* CFNetwork.framework */; };
 		76C32A5E1A2BB46B00972D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C32A5D1A2BB46B00972D91 /* CoreGraphics.framework */; };
@@ -25,7 +27,6 @@
 		76C32A6A1A2BB49B00972D91 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C32A691A2BB49B00972D91 /* StoreKit.framework */; };
 		76C32A6C1A2BB4A400972D91 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C32A6B1A2BB4A400972D91 /* SystemConfiguration.framework */; };
 		76C32A6E1A2BB50800972D91 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C32A6D1A2BB50800972D91 /* Parse.framework */; };
-		76C32A701A2BB68300972D91 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C32A6F1A2BB68300972D91 /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,18 @@
 		7606BF9C1A2B180200824D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7606BF9D1A2B180200824D3D /* Cat_YearsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_YearsTests.swift; sourceTree = "<group>"; };
 		7606BFA71A2B19AD00824D3D /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		762BE0F91A2FB089009BE835 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		762BE0FB1A2FB8E9009BE835 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		762BE0FE1A2FB906009BE835 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		762BE0FF1A2FB906009BE835 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		762BE1001A2FB906009BE835 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		762BE1011A2FB906009BE835 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		762BE1021A2FB906009BE835 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		762BE1031A2FB906009BE835 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		762BE1041A2FB906009BE835 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		762BE1051A2FB906009BE835 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		762BE1061A2FB906009BE835 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		762BE1071A2FB906009BE835 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		76C32A591A2BB45A00972D91 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		76C32A5B1A2BB46200972D91 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		76C32A5D1A2BB46B00972D91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,7 +74,6 @@
 		76C32A691A2BB49B00972D91 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		76C32A6B1A2BB4A400972D91 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		76C32A6D1A2BB50800972D91 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		76C32A6F1A2BB68300972D91 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		76DCA7D61A2B57BB0030266A /* Cat Years-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cat Years-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +85,8 @@
 				76C32A6C1A2BB4A400972D91 /* SystemConfiguration.framework in Frameworks */,
 				76C32A6A1A2BB49B00972D91 /* StoreKit.framework in Frameworks */,
 				76C32A681A2BB49400972D91 /* Security.framework in Frameworks */,
-				76C32A701A2BB68300972D91 /* Bolts.framework in Frameworks */,
+				762BE0FC1A2FB8E9009BE835 /* libGoogleAnalyticsServices.a in Frameworks */,
+				762BE0FA1A2FB089009BE835 /* Bolts.framework in Frameworks */,
 				76C32A661A2BB48E00972D91 /* QuartzCore.framework in Frameworks */,
 				76C32A641A2BB48700972D91 /* MobileCoreServices.framework in Frameworks */,
 				76C32A621A2BB47E00972D91 /* libz.dylib in Frameworks */,
@@ -98,6 +111,9 @@
 		7606BF791A2B180100824D3D = {
 			isa = PBXGroup;
 			children = (
+				762BE0FD1A2FB906009BE835 /* Library */,
+				762BE0FB1A2FB8E9009BE835 /* libGoogleAnalyticsServices.a */,
+				762BE0F91A2FB089009BE835 /* Bolts.framework */,
 				76C32A6D1A2BB50800972D91 /* Parse.framework */,
 				76C32A6B1A2BB4A400972D91 /* SystemConfiguration.framework */,
 				76C32A691A2BB49B00972D91 /* StoreKit.framework */,
@@ -129,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				7606BF871A2B180200824D3D /* AppDelegate.swift */,
-				76C32A6F1A2BB68300972D91 /* Bolts.framework */,
 				7606BF891A2B180200824D3D /* ViewController.swift */,
 				7606BF8B1A2B180200824D3D /* Main.storyboard */,
 				7606BFA71A2B19AD00824D3D /* cat.png */,
@@ -163,6 +178,23 @@
 				7606BF9C1A2B180200824D3D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		762BE0FD1A2FB906009BE835 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				762BE0FE1A2FB906009BE835 /* GAI.h */,
+				762BE0FF1A2FB906009BE835 /* GAIDictionaryBuilder.h */,
+				762BE1001A2FB906009BE835 /* GAIEcommerceFields.h */,
+				762BE1011A2FB906009BE835 /* GAIEcommerceProduct.h */,
+				762BE1021A2FB906009BE835 /* GAIEcommerceProductAction.h */,
+				762BE1031A2FB906009BE835 /* GAIEcommercePromotion.h */,
+				762BE1041A2FB906009BE835 /* GAIFields.h */,
+				762BE1051A2FB906009BE835 /* GAILogger.h */,
+				762BE1061A2FB906009BE835 /* GAITrackedViewController.h */,
+				762BE1071A2FB906009BE835 /* GAITracker.h */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,7 +424,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.science.Cat-Years";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vinay Agarwal (EET47RXRL9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/vinayagarwal/Downloads/parse-library-1.5.0",
@@ -403,7 +436,12 @@
 				INFOPLIST_FILE = "Cat Years/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "accc0a03-977e-4478-a8ec-af80ec1c3153";
 				SWIFT_OBJC_BRIDGING_HEADER = "Cat Years-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -414,7 +452,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.science.Cat-Years";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vinay Agarwal (EET47RXRL9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/vinayagarwal/Downloads/parse-library-1.5.0",
@@ -425,7 +464,12 @@
 				INFOPLIST_FILE = "Cat Years/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "accc0a03-977e-4478-a8ec-af80ec1c3153";
 				SWIFT_OBJC_BRIDGING_HEADER = "Cat Years-Bridging-Header.h";
 			};
 			name = Release;
